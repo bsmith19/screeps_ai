@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module":"amd",
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    "files": [
+        "main.ts",
+        "./node_modules/screeps-typescript-declarations/dist/screeps.d.ts"
+    ]
+}
