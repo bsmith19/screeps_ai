@@ -19,7 +19,9 @@ export class Harvester
             // find a structure that can take this energy....
             var targets:Structure[] = creep.room.find<Structure>(FIND_STRUCTURES,{
                 filter: (structure) => {
-                    return (structure.structureType == STRUCTURE_EXTENSION || structure.structureType == STRUCTURE_SPAWN) &&
+                    return (structure.structureType == STRUCTURE_EXTENSION || 
+                            structure.structureType == STRUCTURE_SPAWN ||
+                            structure.structireType == STRUCTURE_TOWER) &&
                         structure.energy < structure.energyCapacity;
                 }
             });
