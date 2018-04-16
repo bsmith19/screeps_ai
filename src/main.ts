@@ -2,6 +2,9 @@ import * as b from './builder';
 import * as h from './harvester';
 import * as u from './upgrader';
 
+import * as _ from 'lodash'
+
+
 export class Main
 {
     // Declare Managers as class member variables

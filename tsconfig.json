@@ -3,7 +3,9 @@
         "target": "es5",
         "module":"commonjs",
         "sourceMap": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "typeRoots": ["node_modules/@types"],
+        "types": ["lodash"]
     },
     "files": [
         "./src/main.ts",
@@ -11,7 +13,6 @@
         "./src/harvester.ts",
         "./src/upgrader.ts",
         "./src/creepManager.ts",
-        "./node_modules/screeps-typescript-declarations/dist/screeps.d.ts",
-        "./node_modules/@types/underscore/index.d.ts"
+        "./node_modules/screeps-typescript-declarations/dist/screeps.d.ts"
     ]
 }
